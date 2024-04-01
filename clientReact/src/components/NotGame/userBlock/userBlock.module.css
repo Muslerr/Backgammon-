@@ -1,0 +1,63 @@
+/* userBlock.module.css */
+.userItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This will distribute elements along the container */
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.userCircle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.userImage {
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center; /* Align icons vertically */
+}
+
+.icon {
+  cursor: pointer;
+  margin-left: 25px; /* Add some space between icons */
+}
+
+.iconImage {
+  width: 24px;
+  height: 24px;
+}
+
+
+.userContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* To fill the userItem width */
+}
+
+.selected {
+  background-color: #4caf50; /* Change to your desired highlight color */
+  border-color: #4caf50; /* Change to your desired highlight color */
+  color: white;
+}
+
+.iconContainerGame {
+  display: flex;
+  justify-content: flex-start; /* Align children to the start of the container (left-aligned) */
+  align-items: center; /* Center vertically within the container */
+}

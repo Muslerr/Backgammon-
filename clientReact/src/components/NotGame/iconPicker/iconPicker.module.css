@@ -1,0 +1,21 @@
+/* iconPicker.module.css */
+.iconPicker {
+    display: flex;
+    flex-wrap: wrap; /* Wrap the icons to the next line if they exceed container width */
+    gap: 10px; /* Add some spacing between icon items */
+  }
+  
+  .iconItem {
+    cursor: pointer;
+    border: 2px solid transparent; /* Add a border to highlight selected icon */
+  }
+  
+  .selectedIcon {
+    border-color: blue; /* Change border color for selected icon */
+  }
+  
+  .iconImage {
+    width: 30px; /* Set the width of the icon */
+    height: 30px; /* Set the height of the icon */
+  }
+  

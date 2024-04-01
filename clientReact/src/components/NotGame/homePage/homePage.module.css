@@ -1,0 +1,29 @@
+/* HomePage.module.css */
+
+.homePage {
+  height: 93vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.usersAndChatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+
+.userListContainer {
+  flex: 1;
+  overflow: hidden;
+  
+}
+
+.chatRoomContainer {
+  /* Add a margin to create space between UsersList and ChatRoom when both are open */
+  margin-top: 10px;
+}
+
+
+.content {
+  flex: 1;
+}

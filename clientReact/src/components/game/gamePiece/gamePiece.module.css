@@ -1,0 +1,28 @@
+/* GamePieceComponent.css */
+.gamePieceWhite {
+  width: 35px; /* Adjust the size as needed */
+  height: 35px; /* Adjust the size as needed */
+  background-image: url('../../../../public/woodTexture/whiteWood.jpg');
+  border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add box shadow for depth */
+}
+
+.gamePieceBlack{
+  width: 35px; /* Adjust the size as needed */
+  height: 35px; /* Adjust the size as needed */
+  background-image: url('../../../../public/woodTexture/blackWood.jpg');
+  border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add box shadow for depth */
+}
+  
+
+.game-piece.eaten {
+  background-color: #888; /* Adjust color for eaten pieces */
+  cursor: default; /* Change cursor style for non-clickable pieces */
+}

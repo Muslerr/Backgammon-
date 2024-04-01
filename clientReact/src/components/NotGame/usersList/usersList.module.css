@@ -1,0 +1,53 @@
+/* usersList.module.css */
+.userlistcontainer {
+  padding: 10px;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  position: relative;
+  overflow-y: auto; /* Use auto for scrollbar only when needed */
+  direction: rtl;
+  transition: max-height 0.3s ease; 
+
+ 
+  max-height: 85vh; 
+}
+
+.minimizeButton {
+  background-color: transparent;
+  width: 90%;
+  margin-left: 25px;
+}
+
+/* Add a class for hidden state */
+.userlistcontainer.minimized {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+  
+  .userItem {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-bottom: 8px;
+    width:fit-content
+  }
+  
+  .userCircle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  img{
+    width:10%;
+    height: 10%;
+  }
+  .container{
+    max-height: 100px;
+  }

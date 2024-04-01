@@ -1,0 +1,39 @@
+nav {
+    background-color: #333; /* Background color of the navigation bar */
+    color: #fff; /* Text color */
+    padding: 10px 0; /* Adjust padding as needed */
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center align the list items horizontally */
+  }
+  
+  li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 20px;
+    
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff; /* Text color for links */
+    font-weight: bold; /* Optionally, set the font weight */
+  }
+  
+  button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color for the button */
+    padding: 8px 16px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Hover background color */
+  }

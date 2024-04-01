@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  height: 90vh; 
+  overflow: auto; 
+ 
+    background-color: #5c3d24;
+    background-image: url('../public/woodTexture/background.jpg');
+    background-blend-mode: multiply;
+  
+  
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+*{
+  box-sizing: border-box;
+
+}
