@@ -16,7 +16,7 @@ const socketActiveUsers = socketIo(
   process.env.REACT_APP_ACTIVE_SERVICE_BASE_URL
 );
 
-function UsersList({ list, onChatOpen }) {
+function UsersList({ list, onChatOpen,setMinimizedH }) {
   const { user, token, setOpponent, setGameInvites,setCurrentInvite,opponent } = useGameInformation();
   const filteredList = list.filter((u) => u.username !== user);
   const [activeUserslist, setActiveUserslist] = useState([]);
@@ -111,11 +111,15 @@ function UsersList({ list, onChatOpen }) {
   useEffect(() => {
     sortList(filteredList);
   }, []);
-
+  const toggleMinimise = ()=>{
+    setMinimizedH();
+    setMinimized(!minimized)
+  }
+  
   return (
     <div >
       <ToastContainer />
-      <button className={style.minimizeButton} onClick={() => setMinimized(!minimized)}> {minimized ? <img  src="/gameIcons/maximize.png"></img> : <img  src="/gameIcons/minimise.png"></img>}</button>
+      <button className={style.minimizeButton} onClick={toggleMinimise}> {minimized ? <img className={style.miniImg}   src="/gameIcons/maximize.png"></img> : <img  src="/gameIcons/minimise.png"></img>}</button>
       <div className={`${style.userlistcontainer} ${minimized ? style.minimized : ''}`} >                          
         {!minimized && (
           <div>

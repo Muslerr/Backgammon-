@@ -15,7 +15,12 @@
 .userListContainer {
   flex: 1;
   overflow: hidden;
-  
+  width: 30vw;
+}
+.userListContainerMini {
+  flex: 1;
+  overflow: hidden;
+  width: 5vw;
 }
 
 .chatRoomContainer {

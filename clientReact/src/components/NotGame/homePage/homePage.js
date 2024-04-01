@@ -17,6 +17,7 @@ import "react-toastify/dist/ReactToastify.css";
 function HomePage() {
   const location = useLocation();
   const navigate = useNavigate();
+  const [ userListMinimised, setUserListMinimised] = useState(true);
   const [showGame, setShowGame] = useState(false);
   const {
     user,
@@ -51,6 +52,10 @@ function HomePage() {
       setSelectedUserIcon(selectedUser.icon);
     }
   };
+  const toggleUserListMinimize= ()=>{
+    setUserListMinimised(!userListMinimised);
+    console.log('toggle user mini');
+  }
 
   useEffect(() => {
     if (list.length < 1 || token == "") {
@@ -100,8 +105,8 @@ function HomePage() {
 
 <div className={style.homePage}>
 <div className={style.usersAndChatContainer}>
-  <div className={style.userListContainer} style={{ height: selectedChatUser ? '70%' : '100%' }}>
-    <UsersList list={list} onChatOpen={handleChatOpen} />
+  <div className={userListMinimised? style.userListContainer :style.userListContainerMini} style={{ height: selectedChatUser ? '70%' : '100%' }}>
+    <UsersList list={list} onChatOpen={handleChatOpen} setMinimizedH={toggleUserListMinimize}/>
   </div>
   {selectedChatUser && (
     <div className={style.chatRoomContainer}>
